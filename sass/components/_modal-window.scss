@@ -47,11 +47,11 @@
 .icon-close {
     fill: currentColor;
     transition: fill $transition-time;
-}
 
-.icon-close:hover,
-.icon-close:focus {
-    fill: $accent-color;
+        &:hover,
+        &:focus {
+            fill: $accent-color;
+        }
 }
 
 /*--------------MODAL WINDOW FORM---------------*/
@@ -89,6 +89,10 @@
     border-radius: 4px;
     outline: 1px solid transparent;
     transition: outline $transition-time;
+
+        &:focus {
+            outline: 1px solid $accent-color;
+        }
 }
 
 .request-form-icon {
@@ -99,14 +103,10 @@
     transform: translateY(-50%);
     fill: $text-color-darkgrey;
     transition: fill $transition-time;
-}
 
-.request-input:focus {
-    outline: 1px solid $accent-color;
-}
-
-.request-input:focus+.request-form-icon {
-    fill: $accent-color;
+        .request-input:focus+& {
+            fill: $accent-color;
+        }
 }
 
 .modal-field-comment {
@@ -123,18 +123,18 @@
     transition: outline $transition-time;
     cursor: pointer;
     resize: none;
-}
 
-.request-comment:hover,
-.request-comment:focus {
-    outline: 1px solid $accent-color;
-}
+        &:hover,
+        &:focus {
+            outline: 1px solid $accent-color;
+        }
 
-.request-comment::placeholder {
-    font-size: 12px;
-    line-height: 1.2;
-    letter-spacing: 0.01em;
-    color: rgba(117, 117, 117, 0.5);
+        &::placeholder {
+            font-size: 12px;
+            line-height: 1.2;
+            letter-spacing: 0.01em;
+            color: rgba(117, 117, 117, 0.5);
+        }
 }
 
 .modal-field-policy {
@@ -161,12 +161,12 @@
     border-radius: 2px;
     margin-right: 8.38px;
     fill: transparent;
-}
 
-.policy-checkbox:checked+.request-policy span {
-    background-color: $accent-color;
-    border: none;
-    fill: $primary-white;
+        .policy-checkbox:checked+& {
+            background-color: $accent-color;
+            border: none;
+            fill: $primary-white;
+        }
 }
 
 a.policy {
@@ -189,10 +189,10 @@ a.policy {
     background-color: $accent-color;
     color: $primary-white;
     transition: color $transition-time, background-color $transition-time;
-}
 
-.request-send-btn:hover,
-.request-send-btn:focus {
-    color: $accent-color;
-    background-color: $primary-white;
+        &:hover,
+        &:focus {
+            color: $accent-color;
+            background-color: $primary-white;
+        }
 }

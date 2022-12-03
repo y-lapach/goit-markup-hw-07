@@ -34,10 +34,10 @@
     background-color: $accent-color;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     transition: color $transition-time, background-color $transition-time;
-}
 
-.hero .hero-btn:hover,
-.hero .hero-btn:focus {
-    color: $accent-color;
-    background-color: $primary-white;
+        &:hover,
+        &:focus {
+            color: $accent-color;
+            background-color: $primary-white;
+        }
 }

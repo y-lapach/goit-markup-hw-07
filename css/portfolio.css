@@ -164,9 +164,7 @@ nav {
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.site-nav .link:hover,
-.site-nav .link:focus {
+.site-nav .link:hover, .site-nav .link:focus {
   color: #2196F3;
 }
 
@@ -177,7 +175,6 @@ nav {
 .current {
   position: relative;
 }
-
 .current::after {
   content: "";
   display: block;
@@ -214,14 +211,12 @@ nav {
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.contacts-list .contacts-link:hover, .contacts-list .contacts-link:focus {
+  color: #2196F3;
+}
 
 .contacts-list .contacts-list-item:not(:last-child) {
   margin-right: 50px;
-}
-
-.contacts-list .contacts-link:hover,
-.contacts-list .contacts-link:focus {
-  color: #2196F3;
 }
 
 .icon-email,
@@ -278,17 +273,15 @@ nav {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.filter > li:first-child .filter-btn {
-  padding: 6px 25px;
-}
-
-.filter .filter-btn:hover,
-.filter .filter-btn:focus {
+.filter .filter-btn:hover, .filter .filter-btn:focus {
   color: #ffffff;
   background-color: #2196F3;
   -webkit-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
           box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+.filter > li:first-child .filter-btn {
+  padding: 6px 25px;
 }
 
 .projects {
@@ -305,11 +298,9 @@ nav {
   margin-bottom: 30px;
   background-color: #ffffff;
 }
-
 .projects .projects-item:nth-child(3n) {
   margin-right: 0px;
 }
-
 .projects .projects-item:nth-last-child(-n+3) {
   margin-bottom: 0;
 }
@@ -322,9 +313,7 @@ nav {
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.projects-item a.projects-link:hover,
-.projects-item a.projects-link:focus {
+.projects-item a.projects-link:hover, .projects-item a.projects-link:focus {
   -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
           box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
@@ -354,9 +343,7 @@ nav {
   color: #ffffff;
   background-color: rgba(33, 150, 243, 0.9);
 }
-
-.projects-item a.projects-link:hover .projects-text,
-.projects-item a.projects-link:focus .projects-text {
+.projects-item a.projects-link:hover .projects-text, .projects-item a.projects-link:focus .projects-text {
   -webkit-transform: translateY(0);
           transform: translateY(0);
 }
@@ -419,7 +406,6 @@ address {
 .ftr-contacts > li {
   margin-bottom: 9px;
 }
-
 .ftr-contacts > li:last-child {
   margin-bottom: 0;
 }
@@ -433,9 +419,7 @@ address {
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.ftr-contacts .address-link:hover,
-.ftr-contacts .address-link:focus {
+.ftr-contacts .address-link:hover, .ftr-contacts .address-link:focus {
   color: #2196F3;
 }
 
@@ -476,9 +460,7 @@ address {
   -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.ftr-socials-list .ftr-socials-item a:hover,
-.ftr-socials-list .ftr-socials-item a:focus {
+.ftr-socials-list .ftr-socials-item a:hover, .ftr-socials-list .ftr-socials-item a:focus {
   background-color: #2196F3;
 }
 
@@ -515,11 +497,9 @@ address {
   -webkit-transition: outline 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: outline 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .signup-email:focus {
   outline: 1px solid #2196F3;
 }
-
 .signup-email::-webkit-input-placeholder {
   font-weight: 400;
   font-size: 16px;
@@ -527,7 +507,6 @@ address {
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
-
 .signup-email::-moz-placeholder {
   font-weight: 400;
   font-size: 16px;
@@ -535,7 +514,6 @@ address {
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
-
 .signup-email:-ms-input-placeholder {
   font-weight: 400;
   font-size: 16px;
@@ -543,7 +521,6 @@ address {
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
-
 .signup-email::-ms-input-placeholder {
   font-weight: 400;
   font-size: 16px;
@@ -551,7 +528,6 @@ address {
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
-
 .signup-email::placeholder {
   font-weight: 400;
   font-size: 16px;
@@ -583,14 +559,12 @@ address {
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.signup-button:hover, .signup-button:focus {
+  color: #2196F3;
+  background-color: #ffffff;
+}
 
 .icon-send {
   margin-left: 10px;
   fill: currentColor;
-}
-
-.signup-button:hover,
-.signup-button:focus {
-  color: #2196F3;
-  background-color: #ffffff;
 }/*# sourceMappingURL=portfolio.css.map */

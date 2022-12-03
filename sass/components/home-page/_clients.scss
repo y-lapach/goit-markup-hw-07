@@ -16,12 +16,12 @@
     border-radius: 4px;
     color: $main-icons-color;
     transition: color $transition-time, border-color $transition-time;
-}
 
-.clients .client-item a:hover,
-.clients .client-item a:focus {
-    border-color: $accent-color;
-    color: $accent-color;
+        &:hover,
+        &:focus {
+            border-color: $accent-color;
+            color: $accent-color;
+        }
 }
 
 .client-item .client-logo {

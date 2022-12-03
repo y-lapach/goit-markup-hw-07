@@ -30,10 +30,10 @@ address {
 
 .ftr-contacts>li {
     margin-bottom: 9px;
-}
 
-.ftr-contacts>li:last-child {
-    margin-bottom: 0;
+        &:last-child {
+            margin-bottom: 0;
+        }
 }
 
 .ftr-contacts .address-link {
@@ -43,11 +43,11 @@ address {
     text-decoration: none;
     color: $ftr-address-contacts;
     transition: color $transition-time;
-}
 
-.ftr-contacts .address-link:hover,
-.ftr-contacts .address-link:focus {
-    color: $accent-color;
+        &:hover,
+        &:focus {
+            color: $accent-color;
+        }
 }
 
 .join {
@@ -74,11 +74,11 @@ address {
     color: $primary-white;
     background-color: $footer-socials-bg;
     transition: background-color $transition-time;
-}
 
-.ftr-socials-list .ftr-socials-item a:hover,
-.ftr-socials-list .ftr-socials-item a:focus {
-    background-color: $accent-color;
+        &:hover,
+        &:focus {
+            background-color: $accent-color;
+        }
 }
 
 .ftr-socials-item .ftr-socials-icon {
@@ -110,18 +110,18 @@ address {
     background-color: transparent;
     outline: 1px solid transparent;
     transition: outline $transition-time;
-}
 
-.signup-email:focus {
-    outline: 1px solid $accent-color;
-}
+        &:focus {
+            outline: 1px solid $accent-color;
+        }
 
-.signup-email::placeholder {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.3;
-    letter-spacing: 0.03em;
-    color: rgba(255, 255, 255, 0.6);
+        &::placeholder {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 1.3;
+            letter-spacing: 0.03em;
+            color: rgba(255, 255, 255, 0.6);
+        }
 }
 
 .signup-button {
@@ -137,15 +137,15 @@ address {
     color: $primary-white;
     background: $accent-color;
     transition: color $transition-time, background-color $transition-time;
+
+        &:hover,
+        &:focus {
+            color: $accent-color;
+            background-color: $primary-white;
+        }
 }
 
 .icon-send {
     margin-left: 10px;
     fill: currentColor;
-}
-
-.signup-button:hover,
-.signup-button:focus {
-    color: $accent-color;
-    background-color: $primary-white;
 }

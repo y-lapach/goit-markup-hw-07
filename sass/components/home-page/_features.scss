@@ -4,10 +4,10 @@
 
 .features .features-item {
     width: 270px;
-}
 
-.features .features-item:not(:last-child) {
-    margin-right: 30px;
+        &:not(:last-child) {
+            margin-right: 30px;
+        }
 }
 
 .features-item .thumb {
