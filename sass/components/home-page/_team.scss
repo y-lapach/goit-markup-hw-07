@@ -46,8 +46,7 @@
 }
 
 .team-socials .team-socials-item a {
-    display: flex;
-    align-items: center;
+    @include centeredFlex();
     justify-content: center;
     width: 44px;
     height: 44px;

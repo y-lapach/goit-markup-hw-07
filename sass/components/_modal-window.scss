@@ -144,8 +144,7 @@
 }
 
 .request-policy {
-    display: flex;
-    align-items: center;
+    @include centeredFlex();
     justify-content: center;
     font-size: 14px;
     line-height: 1.7;
@@ -154,8 +153,7 @@
 }
 
 .request-policy span {
-    display: flex;
-    align-items: center;
+    @include centeredFlex();
     justify-content: center;
     width: 16px;
     height: 15px;

@@ -5,8 +5,7 @@ footer {
 }
 
 footer .container {
-    display: flex;
-    align-items: baseline;
+    @include centeredFlex(flex,baseline);
     position: relative;
 }
 
@@ -67,8 +66,7 @@ address {
 }
 
 .ftr-socials-list .ftr-socials-item a {
-    display: flex;
-    align-items: center;
+    @include centeredFlex();
     justify-content: center;
     width: 44px;
     height: 44px;
@@ -127,8 +125,7 @@ address {
 }
 
 .signup-button {
-    display: flex;
-    align-items: center;
+    @include centeredFlex();
     justify-content: center;
     width: 200px;
     height: 50px;

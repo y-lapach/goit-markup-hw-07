@@ -8,8 +8,7 @@
 }
 
 .clients .client-item a {
-    display: flex;
-    align-items: center;
+    @include centeredFlex();
     justify-content: center;
     width: 170px;
     height: 92px;

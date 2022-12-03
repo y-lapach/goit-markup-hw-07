@@ -3,8 +3,7 @@ header {
 }
 
 .main-nav {
-    display: flex;
-    align-items: center;
+    @include centeredFlex();
 }
 
 nav {
@@ -64,8 +63,7 @@ nav {
 }
 
 .contacts-list .contacts-link {
-    display: flex;
-    align-items: center;
+    @include centeredFlex();
     padding-top: 32px;
     padding-bottom: 32px;
     font-weight: 500;

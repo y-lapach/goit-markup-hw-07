@@ -16,20 +16,9 @@
 /*General section*/
 @import './components/section';
 
-/*Home page*/
-@import './components/home-page/hero';
-@import './components/home-page/features';
-@import './components/home-page/services';
-@import './components/home-page/team';
-@import './components/home-page/clients';
-
-
 /*Portfolio page*/
 @import './components/portfolio-page/filter';
 @import './components/portfolio-page/projects';
 
 /*Footer*/
 @import './components/footer';
-
-/*Modal window with form*/
-@import './components/modal-window';

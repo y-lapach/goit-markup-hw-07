@@ -11,8 +11,7 @@
 }
 
 .features-item .thumb {
-    display: flex;
-    align-items: center;
+    @include centeredFlex();
     justify-content: center;
     height: 120px;
     margin-bottom: 30px;
