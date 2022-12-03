@@ -1,0 +1,30 @@
+.clients {
+    display: flex;
+    justify-content: center;
+}
+
+.clients .client-item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.clients .client-item a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 170px;
+    height: 92px;
+    border: 1px solid $main-icons-color;
+    border-radius: 4px;
+    color: $main-icons-color;
+    transition: color $transition-time, border-color $transition-time;
+}
+
+.clients .client-item a:hover,
+.clients .client-item a:focus {
+    border-color: $accent-color;
+    color: $accent-color;
+}
+
+.client-item .client-logo {
+    fill: currentColor;
+}

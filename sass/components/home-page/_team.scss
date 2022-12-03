@@ -1,0 +1,67 @@
+.team {
+    background-color: $bg-light-grey;
+}
+
+.team-list {
+    display: flex;
+}
+
+.team-list .team-item {
+    width: 270px;
+    text-align: center;
+    border-radius: 0px 0px 4px 4px;
+    background-color: var(--primary-white);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.team-list .team-item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.team-list .team-member {
+    padding: 30px 10px;
+}
+
+.team-list .team-title {
+    margin-bottom: 10px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    color: $text-color-darkgrey;
+}
+
+.team-list .team-text {
+    margin-bottom: 16px;
+    font-size: 16px;
+    line-height: 1.19;
+}
+
+.team-socials {
+    display: flex;
+    justify-content: center;
+}
+
+.team-socials .team-socials-item:not(:last-child) {
+    margin-right: 10px;
+}
+
+.team-socials .team-socials-item a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    color: var(--main-icons-color);
+    transition: color $transition-time, background-color $transition-time;
+}
+
+.team-socials .team-socials-item a:hover,
+.team-socials .team-socials-item a:focus {
+    color: $primary-white;
+    background-color: $accent-color;
+}
+
+.team-socials-item .team-socials-icon {
+    fill: currentColor;
+}

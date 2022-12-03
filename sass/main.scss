@@ -1,1 +1,34 @@
-@import './utils/variables'
+@import './utils/variables';
+@import './base/reset';
+@import './base/common';
+@import './base/hide';
+
+/*Logo*/
+@import './components/logo';
+
+/*General container*/
+@import './components/container';
+
+/*Header*/
+@import './components/header';
+
+/*General section*/
+@import './components/section';
+
+/*Home page*/
+@import './components/home-page/hero';
+@import './components/home-page/features';
+@import './components/home-page/services';
+@import './components/home-page/team';
+@import './components/home-page/clients';
+
+
+/*Portfolio page*/
+@import './components/portfolio-page/filter';
+@import './components/portfolio-page/projects';
+
+/*Footer*/
+@import './components/footer';
+
+/*Modal window with form*/
+@import './components/modal-window';

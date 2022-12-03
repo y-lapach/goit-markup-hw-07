@@ -1,0 +1,33 @@
+.features {
+    display: flex;
+}
+
+.features .features-item {
+    width: 270px;
+}
+
+.features .features-item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.features-item .thumb {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 120px;
+    margin-bottom: 30px;
+    background-color: $bg-light-grey;
+}
+
+.features .title {
+    margin-bottom: 10px;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: $text-color-darkgrey;
+}
+
+.features .text {
+    font-size: 14px;
+    line-height: 1.7;
+}
