@@ -17,16 +17,16 @@
 @import './components/section';
 
 /*Home page*/
-@import './components/home-page/hero';
-@import './components/home-page/features';
-@import './components/home-page/services';
-@import './components/home-page/team';
-@import './components/home-page/clients';
+@import './componentshero';
+@import './componentsfeatures';
+@import './components/services';
+@import './components/team';
+@import './components/clients';
 
 
 /*Portfolio page*/
-@import './components/portfolio-page/filter';
-@import './components/portfolio-page/projects';
+@import './components/filter';
+@import './components/projects';
 
 /*Footer*/
 @import './components/footer';
