@@ -97,15 +97,15 @@ body {
   text-decoration: none;
 }
 
-.logo-header {
+.logo--black {
   color: #000000;
 }
 
-.logo-footer {
+.logo--white {
   color: #ffffff;
 }
 
-footer a.logo {
+.logo--mn-bottom {
   display: inline-block;
   margin-bottom: 20px;
 }
@@ -118,11 +118,11 @@ footer a.logo {
 }
 
 /*Header*/
-header {
+.page-header {
   border-bottom: 1px solid #ECECEC;
 }
 
-.main-nav {
+.header-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -131,7 +131,7 @@ header {
           align-items: center;
 }
 
-nav {
+.navigation {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -140,18 +140,18 @@ nav {
           align-items: center;
 }
 
-.site-nav {
+.navigation-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin-left: 93px;
 }
 
-.site-nav .site-nav-item:not(:last-child) {
+.navigation-list__item:not(:last-child) {
   margin-right: 50px;
 }
 
-.site-nav .link {
+.navigation-list__link {
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
@@ -164,11 +164,11 @@ nav {
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.site-nav .link:hover, .site-nav .link:focus {
+.navigation-list__link:hover, .navigation-list__link:focus {
   color: #2196F3;
 }
 
-.site-nav .link.current {
+.current {
   color: #2196F3;
 }
 
@@ -193,7 +193,7 @@ nav {
   margin-left: auto;
 }
 
-.contacts-list .contacts-link {
+.contacts-list__link {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -211,16 +211,15 @@ nav {
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.contacts-list .contacts-link:hover, .contacts-list .contacts-link:focus {
+.contacts-list__link:hover, .contacts-list__link:focus {
   color: #2196F3;
 }
 
-.contacts-list .contacts-list-item:not(:last-child) {
+.contacts-list__item:not(:last-child) {
   margin-right: 50px;
 }
 
-.icon-email,
-.icon-telephone {
+.contacts-list__icon {
   margin-right: 10px;
   fill: currentColor;
 }
@@ -368,13 +367,13 @@ nav {
 }
 
 /*Footer*/
-footer {
+.page-footer {
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: #2F303A;
 }
 
-footer .container {
+.footer-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -384,33 +383,27 @@ footer .container {
   position: relative;
 }
 
-.address {
+.address-container {
   margin-right: 70px;
 }
 
-address {
+.address {
   font-style: normal;
-}
-
-.ftr-location {
-  margin-bottom: 9px;
-}
-
-.ftr-address {
   color: #ffffff;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
 }
 
-.ftr-contacts > li {
+.address__location {
   margin-bottom: 9px;
 }
-.ftr-contacts > li:last-child {
-  margin-bottom: 0;
+
+.address__item:not(:last-child) {
+  margin-bottom: 9px;
 }
 
-.ftr-contacts .address-link {
+.address__link {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -419,11 +412,12 @@ address {
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.ftr-contacts .address-link:hover, .ftr-contacts .address-link:focus {
+.address__link:hover, .address__link:focus {
   color: #2196F3;
 }
 
-.join {
+.socials__text,
+.signup-form__text {
   margin-bottom: 20px;
   color: #ffffff;
   font-weight: 700;
@@ -433,7 +427,7 @@ address {
   text-transform: uppercase;
 }
 
-.ftr-join .ftr-socials-list {
+.socials__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -442,7 +436,11 @@ address {
           justify-content: center;
 }
 
-.ftr-socials-list .ftr-socials-item a {
+.socials__item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.socials__link {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -460,31 +458,27 @@ address {
   -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.ftr-socials-list .ftr-socials-item a:hover, .ftr-socials-list .ftr-socials-item a:focus {
+.socials__link:hover, .socials__link:focus {
   background-color: #2196F3;
 }
 
-.ftr-socials-item .ftr-socials-icon {
+.socials__icon {
   fill: currentColor;
 }
 
-.ftr-socials-list .ftr-socials-item:not(:last-child) {
-  margin-right: 10px;
-}
-
 /*----------NEWSLETTER SIGNUP FORM-----------*/
-.ftr-signup {
+.signup-container {
   margin-left: auto;
 }
 
-.signup-data {
+.signup-form__data {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   text-align: center;
 }
 
-.signup-email {
+.signup-form__input {
   min-width: 358px;
   height: 50px;
   padding-left: 16px;
@@ -497,38 +491,38 @@ address {
   -webkit-transition: outline 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: outline 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.signup-email:focus {
+.signup-form__input:focus {
   outline: 1px solid #2196F3;
 }
-.signup-email::-webkit-input-placeholder {
+.signup-form__input::-webkit-input-placeholder {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.3;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
-.signup-email::-moz-placeholder {
+.signup-form__input::-moz-placeholder {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.3;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
-.signup-email:-ms-input-placeholder {
+.signup-form__input:-ms-input-placeholder {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.3;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
-.signup-email::-ms-input-placeholder {
+.signup-form__input::-ms-input-placeholder {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.3;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
-.signup-email::placeholder {
+.signup-form__input::placeholder {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.3;
@@ -564,7 +558,7 @@ address {
   background-color: #ffffff;
 }
 
-.icon-send {
+.signup-button__icon {
   margin-left: 10px;
   fill: currentColor;
 }/*# sourceMappingURL=portfolio.css.map */

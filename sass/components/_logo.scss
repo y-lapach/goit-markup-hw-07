@@ -8,15 +8,15 @@
     text-decoration: none;
 }
 
-.logo-header {
+.logo--black {
     color: $logo-color-header;
 }
 
-.logo-footer {
+.logo--white {
     color: $primary-white;
 }
 
-footer a.logo {
+.logo--mn-bottom {
     display: inline-block;
     margin-bottom: 20px;
 }

@@ -1,42 +1,35 @@
-footer {
+.page-footer {
     padding-top: 60px;
     padding-bottom: 60px;
     background-color: $footer-bg;
 }
 
-footer .container {
+.footer-container {
     @include centeredFlex(flex,baseline);
     position: relative;
 }
 
-.address {
+.address-container {
     margin-right: 70px;
 }
 
-address {
+.address {
     font-style: normal;
-}
-
-.ftr-location {
-    margin-bottom: 9px;
-}
-
-.ftr-address {
     color: $primary-white;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
 }
 
-.ftr-contacts>li {
+.address__location {
     margin-bottom: 9px;
-
-        &:last-child {
-            margin-bottom: 0;
-        }
 }
 
-.ftr-contacts .address-link {
+.address__item:not(:last-child) {
+    margin-bottom: 9px;
+}
+
+.address__link {
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
@@ -50,7 +43,8 @@ address {
         }
 }
 
-.join {
+.socials__text,
+.signup-form__text {
     margin-bottom: 20px;
     color: $primary-white;
     font-weight: 700;
@@ -60,12 +54,16 @@ address {
     text-transform: uppercase;
 }
 
-.ftr-join .ftr-socials-list {
+.socials__list {
     display: flex;
     justify-content: center;
 }
 
-.ftr-socials-list .ftr-socials-item a {
+.socials__item:not(:last-child) {
+    margin-right: 10px;
+}
+
+.socials__link {
     @include centeredFlex();
     justify-content: center;
     width: 44px;
@@ -81,25 +79,21 @@ address {
         }
 }
 
-.ftr-socials-item .ftr-socials-icon {
+.socials__icon {
     fill: currentColor;
 }
 
-.ftr-socials-list .ftr-socials-item:not(:last-child) {
-    margin-right: 10px;
-}
-
 /*----------NEWSLETTER SIGNUP FORM-----------*/
-.ftr-signup {
+.signup-container {
     margin-left: auto;
 }
 
-.signup-data {
+.signup-form__data {
     display: flex;
     text-align: center;
 }
 
-.signup-email {
+.signup-form__input {
     min-width: 358px;
     height: 50px;
     padding-left: 16px;
@@ -145,7 +139,7 @@ address {
         }
 }
 
-.icon-send {
+.signup-button__icon {
     margin-left: 10px;
     fill: currentColor;
 }

@@ -1,25 +1,25 @@
-header {
+.page-header {
     border-bottom: 1px solid $header-border;
 }
 
-.main-nav {
+.header-container {
     @include centeredFlex();
 }
 
-nav {
+.navigation {
     @include centeredFlex();
 }
 
-.site-nav {
+.navigation-list {
     display: flex;
     margin-left: 93px;
 }
 
-.site-nav .site-nav-item:not(:last-child) {
+.navigation-list__item:not(:last-child) {
     margin-right: 50px;
 }
 
-.site-nav .link {
+.navigation-list__link {
     display: block;
     padding-top: 32px;
     padding-bottom: 32px;
@@ -37,7 +37,7 @@ nav {
         }
 }
 
-.site-nav .link.current {
+.current {
     color: $accent-color;
 }
 
@@ -61,7 +61,7 @@ nav {
     margin-left: auto;
 }
 
-.contacts-list .contacts-link {
+.contacts-list__link {
     @include centeredFlex();
     padding-top: 32px;
     padding-bottom: 32px;
@@ -79,14 +79,11 @@ nav {
         }
 }
 
-.contacts-list .contacts-list-item:not(:last-child) {
+.contacts-list__item:not(:last-child) {
     margin-right: 50px;
 }
 
-
-
-.icon-email,
-.icon-telephone {
+.contacts-list__icon {
     margin-right: 10px;
     fill: currentColor;
 }
