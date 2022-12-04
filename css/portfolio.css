@@ -234,7 +234,8 @@ body {
   padding-top: 0px;
 }
 
-.section-title {
+/*Portfolio page*/
+.portfolio-title {
   margin-bottom: 50px;
   text-align: center;
   font-size: 36px;
@@ -242,7 +243,6 @@ body {
   color: #212121;
 }
 
-/*Portfolio page*/
 .filter {
   display: -webkit-box;
   display: -ms-flexbox;

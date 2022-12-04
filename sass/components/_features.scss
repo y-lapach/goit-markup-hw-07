@@ -2,6 +2,9 @@
     display: flex;
 }
 
+.features-title {
+    @include sectiionTitle();
+}
 .features .features-item {
     width: 270px;
 

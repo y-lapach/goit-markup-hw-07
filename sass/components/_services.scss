@@ -3,6 +3,9 @@
     gap: 30px;
 }
 
+.services-title {
+    @include sectiionTitle();
+}
 .services-item {
     position: relative;
 }

@@ -3,6 +3,9 @@
     justify-content: center;
 }
 
+.clients-title {
+    @include sectiionTitle();
+}
 .clients .client-item:not(:last-child) {
     margin-right: 30px;
 }
