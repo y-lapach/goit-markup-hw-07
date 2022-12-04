@@ -4,11 +4,11 @@
     justify-content: center;
 }
 
-.filter .filter-item:not(:last-child) {
+.filter__item:not(:last-child) {
     margin-right: 8px;
 }
 
-.filter .filter-btn {
+.filter__btn {
     padding: 6px 22px;
     text-align: center;
     border-radius: 4px;
@@ -28,6 +28,6 @@
         }
 }
 
-.filter>li:first-child .filter-btn {
+.filter>li:first-child .filter__btn {
     padding: 6px 25px;
 }

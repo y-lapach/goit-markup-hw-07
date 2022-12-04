@@ -3,7 +3,7 @@
     flex-wrap: wrap;
 }
 
-.projects .projects-item {
+.projects__item {
     width: calc((100% - 60px) / 3);
     margin-right: 30px;
     margin-bottom: 30px;
@@ -18,7 +18,7 @@
         }
 }
 
-.projects-item a.projects-link {
+.projects__link {
     display: block;
     text-decoration: none;
     transition: box-shadow $transition-time;
@@ -29,12 +29,12 @@
         }
 }
 
-.projects-about {
+.projects__about {
     position: relative;
     overflow: hidden;
 }
 
-.projects-text {
+.projects__text {
     display: inline-block;
     position: absolute;
     top: 0;
@@ -50,27 +50,27 @@
     color: $primary-white;
     background-color: $blue-overlay;
 
-        .projects-item a.projects-link:hover &,
-        .projects-item a.projects-link:focus & {
+        .projects__link:hover &,
+        .projects__link:focus & {
             transform: translateY(0);
     
         }
 }
 
-.projects .project-desc {
+.projects__desc {
     padding: 20px 24px;
     border: 1px solid $border-light-grey;
     border-top: none;
 }
 
-.projects .projects-title {
+.projects__title {
     color: $text-color-darkgrey;
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
 }
 
-.projects .projects-type {
+.projects__type {
     color: $text-color-grey;
     font-size: 16px;
     line-height: 1.9;
