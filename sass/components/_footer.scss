@@ -118,7 +118,7 @@
         }
 }
 
-.signup-button {
+.signup-form__button {
     @include centeredFlex();
     justify-content: center;
     width: 200px;
@@ -139,7 +139,7 @@
         }
 }
 
-.signup-button__icon {
+.signup-form__icon {
     margin-left: 10px;
     fill: currentColor;
 }

@@ -1,11 +1,11 @@
-.features {
+.features-list {
     display: flex;
 }
 
-.features-title {
+.features__title {
     @include sectiionTitle();
 }
-.features .features-item {
+.features-list__item {
     width: 270px;
 
         &:not(:last-child) {
@@ -13,7 +13,7 @@
         }
 }
 
-.features-item .thumb {
+.features-list__thumb {
     @include centeredFlex();
     justify-content: center;
     height: 120px;
@@ -21,7 +21,7 @@
     background-color: $bg-light-grey;
 }
 
-.features .title {
+.features-list__title {
     margin-bottom: 10px;
     font-size: 14px;
     line-height: 1.14;
@@ -29,7 +29,7 @@
     color: $text-color-darkgrey;
 }
 
-.features .text {
+.features-list__text {
     font-size: 14px;
     line-height: 1.7;
 }

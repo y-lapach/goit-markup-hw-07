@@ -1,16 +1,17 @@
-.clients {
+.clients__title {
+    @include sectiionTitle();
+}
+
+.clients-list {
     display: flex;
     justify-content: center;
 }
 
-.clients-title {
-    @include sectiionTitle();
-}
-.clients .client-item:not(:last-child) {
+.clients-list__item:not(:last-child) {
     margin-right: 30px;
 }
 
-.clients .client-item a {
+.clients-list__link {
     @include centeredFlex();
     justify-content: center;
     width: 170px;
@@ -27,6 +28,6 @@
         }
 }
 
-.client-item .client-logo {
+.clients-list__logo {
     fill: currentColor;
 }
